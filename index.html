@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Family & Friends Event Planner</h1>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <section id="event-form">
+        <h2>Create an Event</h2>
+        <input type="text" id="eventName" placeholder="Event Name" required>
+        <input type="date" id="eventDate" required>
+        <button onclick="addEvent()">Add Event</button>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul id="eventList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
